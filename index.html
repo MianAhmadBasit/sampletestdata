@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+
+    <h1>Percentage Calculator</h1>
+
+
+    <form onsubmit="percentageCalc(); return false;">
+      <label for="obt">Enter the Obtained Marks:</label>
+      <input type="number" id="obt1" name="obt" required>
+
+      <label for="tot">Enter the Total Marks:</label>
+      <input type="number" id="tm1" name="tot" required>
+
+      <button type="submit">Calculate Percentage</button>
+
+
+
+    </form>
+
+
+
+
+    <script>
+
+function percentageCalc() {
+    obtMarks = document.getElementById("obt1").value ;
+     TmMarks = document.getElementById("tm1").value ;
+     res = (obtMarks / TmMarks) * 100 ;
+    //  alert("you have got it " + res + "%");
+    document.write("you have got it " + res + "%");
+    console.log("you have got it " + res + "%");
+
+} 
+
+
+    </script>
+
+
+
+
+
+
+
+    
+
+    <!-- <script src="index.js"></script> -->
+
+</body>
+</html>
